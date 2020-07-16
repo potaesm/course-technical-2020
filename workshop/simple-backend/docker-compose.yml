@@ -7,3 +7,7 @@ services:
       - "4000:4000"
   mongo:
     image: mongo:4.2.8-bionic
+    environment:
+    - MONGO_INITDB_ROOT_USERNAME=mongoadmin
+    - MONGO_INITDB_ROOT_PASSWORD=secret
+    - MONGO_INITDB_DATABASE=mydb
